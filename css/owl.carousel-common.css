@@ -1,0 +1,98 @@
+/*СЛАЙДЕР № 1*/
+/*Кнопки слева и справа*/
+#owl-one .owl-prev {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAfCAYAAADupU20AAAAn0lEQVQ4T7XVwRGAIAwEQOjLvxXYhH+rsg1nbMvw0AEJJHciM/dkow8uMYSwSU7JIYFPlBuTZJcsDJKAdGjkBmgkByjkDcCIBkBIC3AjPcCFWICJeIAu4gWaCAKoCApUCAMUCAskZJXMLPC8XgYonj4KVL2BAGrpeIFmY3mAbt1ZgNmVv/WBOfleIMM70T1Z+wL4ckKGbCZqcv4Ln7bzBd6XO0k8LxCWAAAAAElFTkSuQmCC);
+    width: 16px;
+    height: 31px;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 16px); 
+}
+
+#owl-one .owl-next {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAfCAYAAADupU20AAAAoElEQVQ4T6XUuw2AMAxFUTIWEmuwGktQUdIzGHYRlK/t90CKRHMPkZCdFv7ZJF0T2Wt8ytkZ4IsFeFCgivX2CNDFCDCMo8A0jgBm7AFubAGheAaE4xEAxS0AxyVAxRmg4wxc8nLLOZjJ1Fn4fQP9MI2U00gh7TjDyGgfQMhsoYQRayOFEG+luYgHuL84AphIFJgiCDBEUKBDGKBCWCAj6wuqmjmCScdd/QAAAABJRU5ErkJggg==) no-repeat;
+    width: 16px;
+    height: 31px;
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 16px); 
+}
+
+
+/*СЛАЙДЕР № 2*/
+/*Ширина второго слайдера и ширина блока в этом же слайдере*/
+#owl-two {
+	width: 25%;
+    float: right;
+}
+
+#owl-two .slider {
+	width: 100%;
+    
+}
+
+/*Блок кнопок снизу*/
+#owl-two .owl-pagination {
+    position: absolute;
+    top: 125px;
+    left: 27px;
+}
+
+/*Кнопки снизу*/
+#owl-two .owl-page {
+    width: 10px;
+    height: 10px;
+    background: #f69880;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 5px 9px 0 0;
+    
+}
+/*Кнопки снизу при наведении*/
+#owl-two .owl-page:hover {
+    background: #fff;
+}
+
+/*Кнопки снизу активные*/
+#owl-two .owl-page.active {
+    background: #fff;
+}
+
+/*СЛАЙДЕР № 3*/
+/*Ширина второго слайдера и ширина блока в этом же слайдере*/
+#owl-three {
+	width: 25%;
+    float: left;
+}
+
+#owl-three .slider {
+	width: 100%;
+    
+}
+
+/*Блок кнопок снизу*/
+#owl-three .owl-pagination {
+    position: absolute;
+    top: 125px;
+    left: 27px;
+}
+
+/*Кнопки снизу*/
+#owl-three .owl-page {
+    width: 10px;
+    height: 10px;
+    background: #f69880;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 5px 9px 0 0;
+    
+}
+/*Кнопки снизу при наведении*/
+#owl-three .owl-page:hover {
+    background: #fff;
+}
+
+/*Кнопки снизу активные*/
+#owl-three .owl-page.active {
+    background: #fff;
+}

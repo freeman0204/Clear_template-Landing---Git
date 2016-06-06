@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input[type=button] {
+  cursor: pointer;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-width: 300px;
+  position: relative;
+}
+
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; /*Что бы убрать странный отступ у картинки*/
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* begin Общие стили */
+#block {
+    padding: 50px 0;
+}
+
+h2.headline {
+    font-size: 1.88em;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #0058a4;
+    text-transform: uppercase;
+    position: relative;
+    left: 50%;
+    margin-left: -94.5px; /* Если будут линии по краям заголовка и я не смгу задать text-align: center; */
+    margin-bottom: 30px;
+    text-align: center;
+    display: inline-block; 
+}
+/*
+h2.headline:before {
+content: "";
+position: absolute;
+width: 111px;
+height: 9px;
+top: 19px;
+left: -140px;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAAJCAYAAAA8aHInAAABCUlEQVRIS2NkGAWDNgRkCldxvvnIWvnv/78ooCNlgfgxAwPj0l9f/nQwrA77zjhoXT7CHSaVtpnrze9fe0LNZCyrfDUYVMR5GO68/MLQuukGw5rTT479YmVzHY28QZpIuJLWNwWbSdcuSjfFcGHU9JMMa888bRyNvEEaeWwJa++da3FR1Jbmw3DhtaefGAxr99xjZEtc+3+Qun/EO+v73EAGJkbM/PXrzz8G3rQNv0Zz3iBNIuxJa++dbcKT82r23B+NvEEaeTyp65sDjaVrsNV50dNPARstT5tGI2+QRh60tbkX2Nq0ALU21SR5wa3Nlo3XGVafGm1tDtJoQzgLrZ8nB5R5hNzPAwB52GhqQ1It1AAAAABJRU5ErkJggg==);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+h2.headline:after {
+content: "";
+position: absolute;
+width: 111px;
+height: 9px;
+top: 19px;
+right: -140px;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAAJCAYAAAA8aHInAAABD0lEQVRIS2NkAIHQVZxsPCwVDAz/o4E8WSB+zMTItEyE/3f7k/6w72A1o2DQhQAjQ9pmLrbfv3aHmMpYVftpMKiI8zDcefmFoW3zDYbVp54cF2Flc3k2y/fboHP5qIMYGNkS1jYFmUrXLs8yRwmO//8ZGOJnnWZYffpJ04+5QfWjYTX4QoCRLXHtnXPNLsra0nwYrrv69BODSd3eBz/mBSkOPqePuggUeT8/zwpgY2NhwgiNf8Dsx5m8fjSUBmkIgHPeeWDO08KS864Bc55h7Z6Hv+YHKwxS949oZ4EirznIRLpmtM4beukA3toMNZOxqvHXZFAW42a4/WK0tTkUopIRSz9PDij2aLSfN/ijDwAi3GwdU+KA4gAAAABJRU5ErkJggg==);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+*/
+
+h3.headline {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.88em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* end Общие стили */
+
+/* begin header */
+header {
+    background: #597da3; 
+}
+
+header .container, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;   
+}
+
+.dropmenu {
+    display: flex; 
+}
+
+.dropmenu li {
+    margin-right: 20px;
+}
+.dropmenu li:last-child {
+    margin-right: 0;
+}
+
+.dropmenu a {
+    color: #fff;
+}
+.dropmenu a:hover {
+    transition: all 0.5s ease;
+    color: #be9a9a;
+}
+
+.menu-trigger {
+    display: none;
+}
+
+.menu-trigger span {
+    width: 30px;
+    margin-bottom: 5px;
+    display: block;
+    height: 4px;
+    background: #fff;
+}
+
+.menu-trigger span:last-child {
+    margin-bottom: 0;
+}
+/* end header */
+
+
+/* begin xxx1 */
+.xxx1 {
+    background: #edf1f5 url('../images/') no-repeat;
+    min-height: 300px;
+    background-size: cover;
+}
+/* end xxx1 */
+
+/* begin xxx2 */
+.xxx2 {
+    background: #e3e3e3 url('../images/') no-repeat;
+    min-height: 300px;
+    background-size: cover;  
+}
+/* end xxx2 */
+
+/* begin xxx3 */
+.xxx3 {
+    background: #adadad url('../images/') no-repeat;
+    min-height: 300px;
+    background-size: cover;  
+}
+/* end xxx3 */
+
+/* begin xxx4 */
+.xxx4 {
+    background: #9f9f9f url('../images/') no-repeat;
+    min-height: 300px;
+    background-size: cover;  
+}
+/* end xxx4 */
+
+
+/* begin xxx5 */
+.xxx5 {
+    background: #edf1f5 url('../images/') no-repeat;
+    min-height: 300px;
+    background-size: cover;  
+}
+/* end xxx5 */
+
+/* begin footer */
+footer {
+    background: #597da3;
+}
+/* end footer */
