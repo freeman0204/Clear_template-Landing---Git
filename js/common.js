@@ -10,3 +10,5 @@ $(document).ready(function () {
         }
     }); //end resize
 }); //end ready
+
+Новая строка
